@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./Fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("./Fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+:root {
+  --primary: #eafa35;
+  --gray: #5d5d5d;
+  --Inter: "Inter";
+  --WorkSans: "Work Sans";
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: var(--Inter);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+/* nav  */
+nav {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background-color: black;
+}
+#logoMenu,
+#navButton {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+#navButton button {
+  padding: 0.5rem 2rem;
+  background-color: var(--primary);
+  color: black;
+  font-weight: 800;
+  border: none;
+  border-radius: 0.5rem;
+}
+.sidedevider {
+  border-right: 1px solid var(--gray);
+  padding-right: 2rem;
+}
+#mainLogo {
+  max-height: 2rem;
+}
+/* landing background  */
+.landingBG {
+  height: min-content;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.container {
+  position: relative;
+  z-index: 1;
+}
+.shape1,
+.shape2 {
+  filter: blur(6rem);
+}
+/* header  */
+.header {
+  width: 800px;
+  text-align: center;
+  margin: 3.75rem auto;
+}
+.header h1 {
+  font-size: 80px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+#h1Text {
+  color: var(--primary);
+}
+
+.header p {
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--WorkSans);
+  margin-bottom: 2rem;
+}
+.header form {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.header form input {
+  color: var(--gray);
+  padding: 0.7rem 0.5rem;
+  font-family: var(--WorkSans);
+  width: 360px;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.header form button {
+  background-color: var(--primary);
+  border: none;
+  padding: 0.5rem 2.5rem;
+  border-radius: 0.5rem;
+}
+
+.company {
+  display: flex;
+  justify-content: center;
+}
